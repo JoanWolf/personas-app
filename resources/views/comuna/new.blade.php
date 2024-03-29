@@ -16,7 +16,7 @@
     <div class="container">
         <h1>Add Comuna</h1>
         <form method="POST" action="{{ route('comunas.store')}}">
-            @csfr
+            @csrf
             <div class="mb-3">
                 <label for="id" class="form-label">Code</label>
                 <input type="text" class="form-control" id="id" aria-describedby="idHelp" name="id" 
