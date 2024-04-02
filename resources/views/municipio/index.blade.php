@@ -15,7 +15,6 @@
 <body>
     <div class="container">
         <h1>Listado de Comunas</h1>
-        <a href="{{ route('comunas.create')}}" class="btn btn-success"> Add </a>
         <table class="table">
             <thead>
                 <tr>
@@ -26,22 +25,16 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach ($comunas as $comuna)
+                @foreach ($municipios as $municipio)
                 <tr>
-                    <th scope="row">{{$comuna->comu_codi}}</th>
-                    <td>{{$comuna->comu_nomb}}</td>
-                    <td>{{$comuna->muni_nomb}}</td>
+                    <th scope="row">{{$municipio->muni_codi}}</th>
+                    <td>{{$municipio->muni_nomb}}</td>
+                    <td>{{$municipio->depa_nomb}}</td>
 
                     <td>
-                        <a href="{{route('comunas.edit', ['comuna' => $comuna->comu_codi]) }}"
-                            class="btn btn-info">Edit</a></li>
-
-                        <form action="{{route('comunas.destroy', ['comuna' => $comuna->comu_codi]) }}"
-                            method="POST" style="display: inline-block">
-                            @method('delete')
-                            @csrf 
-                            <input class="btn btn-danger" type="submit" value="Delete">
-                        </form>
+                        <span>
+                            actions
+                        </span>
                     </td>
 
                     <!-- <td><span>Action</span></td> -->
