@@ -115,7 +115,7 @@ class ComunaController extends Controller
      */
     public function destroy($id)
     {
-        $comuna = comuna::find($id);
+        $comuna = Comuna::find($id);
         $comuna->delete();
 
         $comunas = DB::table('tb_comuna')
