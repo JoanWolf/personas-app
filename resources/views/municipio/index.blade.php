@@ -9,18 +9,19 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <title>Listado de Comunas</title>
+    <title>Listado de Municipios</title>
 </head>
 
 <body>
     <div class="container">
-        <h1>Listado de Comunas</h1>
+        <h1>Listado de Municipios</h1>
+        <a href="{{ route('municipios.create')}}" class="btn btn-success"> Add </a>
         <table class="table">
             <thead>
                 <tr>
                     <th scope="col">code</th>
-                    <th scope="col">Commune</th>
                     <th scope="col">Municipality</th>
+                    <th scope="col">Department</th>
                     <th scope="col">Actions</th>
                 </tr>
             </thead>
