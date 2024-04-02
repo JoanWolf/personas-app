@@ -34,7 +34,7 @@
 
                     <td>
                         <a href="{{route('comunas.edit', ['comuna' => $comuna->comu_codi]) }}"
-                            class="btn btn-info">Edit</a></li>
+                            class="btn btn-info">Edit</a>
 
                         <form action="{{route('comunas.destroy', ['comuna' => $comuna->comu_codi]) }}"
                             method="POST" style="display: inline-block">
