@@ -34,6 +34,8 @@
 
                     <td>
 
+                    <a href="{{route('paises.edit', ['pais' => $pais->pais_codi]) }}"
+                            class="btn btn-info">Edit</a>
                         
                         <form action="{{route('paises.destroy', ['pais' => $pais->pais_codi]) }}"
                             method="POST" style="display: inline-block">
